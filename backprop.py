@@ -65,20 +65,3 @@ class Item:
             current = l.pop(0)
             if len(current.children) != 0:
                 current._backstep()
-
-
-        
-    
-
-
-
-a = Item(143)
-b = Item(12)
-
-c = a - b
-c.grad = 12
-
-
-c.backprop()
-
-print(a.grad)
